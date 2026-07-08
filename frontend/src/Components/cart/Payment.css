@@ -1,0 +1,233 @@
+/* Payment Page Styles */
+.payment-page {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem 3rem;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.payment-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.5px;
+}
+
+.payment-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-select-label {
+  color: #2d7a50;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Payment Method Cards */
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.payment-method-card {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  margin-bottom: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.payment-method-card:first-child {
+  border-radius: 12px;
+}
+
+.payment-method-card.selected {
+  border-color: #2d7a50;
+  background: #f0faf4;
+}
+
+.payment-method-card:hover:not(.selected) {
+  border-color: #aad4b8;
+  background: #fafffe;
+}
+
+.payment-method-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.payment-method-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.payment-method-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.payment-method-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.payment-method-sub {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 1px;
+}
+
+/* Radio Button */
+.payment-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  flex-shrink: 0;
+  transition: border-color 0.2s, background 0.2s;
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.payment-radio.radio-active {
+  border-color: #2d7a50;
+  background: radial-gradient(circle, #2d7a50 45%, transparent 46%);
+  border-width: 2px;
+}
+
+/* UPI Input */
+.upi-input-wrapper {
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid #d5edde;
+  width: 100%;
+}
+
+.upi-input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #d5edde;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  color: #333;
+  background: #fff;
+  transition: border-color 0.2s;
+}
+
+.upi-input:focus {
+  border-color: #2d7a50;
+}
+
+.upi-input::placeholder {
+  color: #bbb;
+}
+
+/* Order Summary Card */
+.payment-summary-card {
+  margin-top: 1.5rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem 1.2rem;
+  background: #fff;
+}
+
+.summary-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.93rem;
+  color: #444;
+  margin-bottom: 0.6rem;
+}
+
+.summary-divider {
+  border: none;
+  border-top: 1.5px dashed #e0e0e0;
+  margin: 0.8rem 0;
+}
+
+.summary-total {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 1.2rem;
+}
+
+/* Pay Button */
+.pay-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #1b5e38;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, transform 0.1s;
+  margin-top: 0.5rem;
+}
+
+.pay-btn:hover {
+  background: #154d2e;
+  transform: translateY(-1px);
+}
+
+.pay-btn:active {
+  transform: translateY(0);
+}
+
+/* Secure note */
+.payment-secure-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Empty State */
+.payment-empty {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.payment-back-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: #1b5e38;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}

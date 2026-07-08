@@ -1,0 +1,25 @@
+# Dependency directories
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Local configuration/secret files
+backend/config/config.env
+.env
+*.env
+secrets.json
+
+# Build outputs
+frontend/dist/
+dist/
+build/
+
+# IDE/Tool specific files
+.agents/
+.gemini/
+.antigravityignore
+.project
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
